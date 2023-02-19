@@ -1,7 +1,6 @@
 function validateName()
 { 
     var u_name=document.myForm.u_name;
-    var u_submit=document.myForm.u_submit;
     var nameError=document.getElementById("u_name_msj")
     var check=document.getElementById("check-name")
 
