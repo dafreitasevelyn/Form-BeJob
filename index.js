@@ -10,7 +10,6 @@ function validateName()
         u_name.style.borderColor='red';
         nameError.innerHTML="No puede contener número" 
         nameError.className="error-message" 
-        // u_submit.disabled = true
         check.className="fa solid fa-exclamation-circle"
     }
     else if (u_name.value=="")
@@ -18,7 +17,6 @@ function validateName()
         u_name.style.borderColor='red';
         nameError.innerHTML="Rellene este campo" 
         nameError.className="error-message"
-        // u_submit.disabled = true
         check.className="fa solid fa-exclamation-circle"
     }
     else
@@ -26,7 +24,7 @@ function validateName()
         u_name.style.borderColor= "green";
         check.className="fa solid fa-check-circle"
         nameError.innerHTML=""
-        // u_submit.disabled = false
+        
     }
 }
 
@@ -71,6 +69,7 @@ function validatePasswordLength()
         passError.innerHTML="No debe tener más de 8 caracteres" 
         passError.className="error-message"
         check.className="fa solid fa-exclamation-circle"
+        validatePassword()
     }
     else if (u_pass.value=="")
     {
@@ -78,6 +77,7 @@ function validatePasswordLength()
         passError.innerHTML="Rellene campo contraseña" 
         passError.className="error-message"
         check.className="fa solid fa-exclamation-circle"
+        validatePassword()
 
     }
     else
@@ -85,6 +85,7 @@ function validatePasswordLength()
         u_pass.style.borderColor='green';
         passError.innerHTML=""
         check.className="fa solid fa-check-circle"
+        validatePassword()
     }
 }
 
